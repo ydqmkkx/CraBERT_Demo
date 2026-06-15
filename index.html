@@ -2,7 +2,7 @@
 <html>
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
-  <title>Raphe: A Cascade Pre-Trained Phoneme Encoder with Subword Representations Alignment for Text-to-Speech</title>
+  <title>CraBERT: A Cascade Pre-Trained Phoneme Encoder with Subword Representations Alignment for Text-to-Speech</title>
   <style>
     table {
         border-collapse: collapse; /* 移除或减少边框间距 */
@@ -60,20 +60,15 @@
   </head>
 
 <body>
-<font size='4', face="Arial"><h1><center>Raphe: A Cascade Pre-Trained Phoneme Encoder with Subword Representations Alignment for Text-to-Speech</center></h1></font>
-<font size='4', face="Arial"><center><b>Authors: </b> Dong Yang, Yuki Saito, Wataru Nakata, Hiroshi Saruwatari </center></font>
+<font size='4', face="Arial"><h1><center>CraBERT: A Cascade Pre-Trained Phoneme Encoder with Subword Representations Alignment for Text-to-Speech</center></h1></font>
 <p></p> 
-<!--<font size='4', face="Arial"><center><a href="https://arxiv.org/abs/2402.00288">arXiv</a> <a href="https://github.com/ydqmkkx/Respiro-en">GitHub</a></center></font>
-<!-- <center><a href="https://arxiv.org/abs/">arxiv preprint</a></center> -->
-<!-- <center><a href="https://ydqmkkx.github.io/breath-detection/poster.html">poster</a></center> -->
-                            
+                         
 <br></br>
 <hr/>                     
 
 <p></p>
-<font size='4', face="Arial">We sampled 15 speaker-text pairs for this demo page.</font><br>
 <font size='4', face="Arial">For each pair, the first row corresponds to Table I and the second row corresponds to Table II from our paper.</font><br>
-<font size='4', face="Arial">Notably, the <b>75%</b> in Table I is also the <b>Raphe-1e</b> in Table II.</font>
+<font size='4', face="Arial">Notably, the <b>75%</b> in Table I is also the <b>CraBERT-1e</b> in Table II.</font>
 <p></p>
 
 <font size='4', face="Arial">For convenience, we display only the subword sequence, where ## is the subword prefix, / is the respiratory pause mark, and ^ is the breath mark.</font>
@@ -91,7 +86,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -104,9 +99,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -131,7 +126,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -144,9 +139,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -171,7 +166,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -184,9 +179,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -211,7 +206,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -224,9 +219,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -251,7 +246,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -264,9 +259,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -291,7 +286,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -304,9 +299,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -331,7 +326,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -344,9 +339,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -371,7 +366,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -384,9 +379,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -411,7 +406,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -424,9 +419,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -451,7 +446,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -464,9 +459,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -491,7 +486,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -504,9 +499,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -520,49 +515,9 @@
       <td><audio controls="controls"><source src="audio/plbert/4595_45204_000036_000002_0.wav"></audio></td>
       <td><audio controls="controls"><source src="audio/baseline/4595_45204_000036_000002_0.wav"></audio></td>
     </tr>
-    
-    <tr></tr>
-      <td colspan="8"><span><font size='4' face="Arial">12.(speaker id: 4973) it may proceed from the gaze of the many eyes that turn upon the speaker ^ especially if he permits himself to steadily return that gaze
-      <!--4973_44575_000003_000001_0.wav-->
-      </font></span></td>
-    </tr>
-    <tr>
-      <th><font size='4' face="Arial">15%</font></th>
-      <th><font size='4' face="Arial">30%</font></th>
-      <th><font size='4' face="Arial">45%</font></th>
-      <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
-      <th><font size='4' face="Arial">90%</font></th>
-    </tr>
-    <tr>
-      <td><audio controls="controls"><source src="audio/15/4973_44575_000003_000001_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/30/4973_44575_000003_000001_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/45/4973_44575_000003_000001_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/60/4973_44575_000003_000001_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/75/4973_44575_000003_000001_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/90/4973_44575_000003_000001_0.wav"></audio></td>
-    </tr>
-    <tr>
-      <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
-      <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
-      <th><font size='4' face="Arial"><b>Baseline</b></font></th>
-    </tr>
-    <tr>
-      <td><audio controls="controls"><source src="audio/gt/4973_44575_000003_000001_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/10e/4973_44575_000003_000001_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/0e/4973_44575_000003_000001_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/parallel/4973_44575_000003_000001_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/mpbert/4973_44575_000003_000001_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/plbert/4973_44575_000003_000001_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/baseline/4973_44575_000003_000001_0.wav"></audio></td>
-    </tr>
 
     <tr></tr>
-      <td colspan="8"><span><font size='4' face="Arial">13.(speaker id: 5189) there s no law in christ ##end ##om against bas ##ting a man with a roast pig ! dick s weapon failed before his anger
+      <td colspan="8"><span><font size='4' face="Arial">12.(speaker id: 5189) there s no law in christ ##end ##om against bas ##ting a man with a roast pig ! dick s weapon failed before his anger
       <!--5189_59288_000010_000001_0.wav-->
       </font></span></td>
     </tr>
@@ -571,7 +526,7 @@
       <th><font size='4' face="Arial">30%</font></th>
       <th><font size='4' face="Arial">45%</font></th>
       <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
+      <th><font size='4' face="Arial">75% (CraBERT-1e)</font></th>
       <th><font size='4' face="Arial">90%</font></th>
     </tr>
     <tr>
@@ -584,9 +539,9 @@
     </tr>
     <tr>
       <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-10e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT-0e</b></font></th>
+      <th><font size='4' face="Arial"><b>CraBERT<sub>para</sub>-0e</b></font></th>
       <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
       <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
       <th><font size='4' face="Arial"><b>Baseline</b></font></th>
@@ -599,86 +554,6 @@
       <td><audio controls="controls"><source src="audio/mpbert/5189_59288_000010_000001_0.wav"></audio></td>
       <td><audio controls="controls"><source src="audio/plbert/5189_59288_000010_000001_0.wav"></audio></td>
       <td><audio controls="controls"><source src="audio/baseline/5189_59288_000010_000001_0.wav"></audio></td>
-    </tr>
-
-    <tr></tr>
-      <td colspan="8"><span><font size='4' face="Arial">14.(speaker id: 7120) at the same time / it may be seen ^ how much / anxiety , care ^ hazard ^ delay / and material / aid ^ were required /
-      <!--7120_118112_000000_000005_0.wav-->
-      </font></span></td>
-    </tr>
-    <tr>
-      <th><font size='4' face="Arial">15%</font></th>
-      <th><font size='4' face="Arial">30%</font></th>
-      <th><font size='4' face="Arial">45%</font></th>
-      <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
-      <th><font size='4' face="Arial">90%</font></th>
-    </tr>
-    <tr>
-      <td><audio controls="controls"><source src="audio/15/7120_118112_000000_000005_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/30/7120_118112_000000_000005_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/45/7120_118112_000000_000005_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/60/7120_118112_000000_000005_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/75/7120_118112_000000_000005_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/90/7120_118112_000000_000005_0.wav"></audio></td>
-    </tr>
-    <tr>
-      <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
-      <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
-      <th><font size='4' face="Arial"><b>Baseline</b></font></th>
-    </tr>
-    <tr>
-      <td><audio controls="controls"><source src="audio/gt/7120_118112_000000_000005_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/10e/7120_118112_000000_000005_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/0e/7120_118112_000000_000005_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/parallel/7120_118112_000000_000005_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/mpbert/7120_118112_000000_000005_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/plbert/7120_118112_000000_000005_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/baseline/7120_118112_000000_000005_0.wav"></audio></td>
-    </tr>
-
-    <tr></tr>
-      <td colspan="8"><span><font size='4' face="Arial">15.(speaker id: 7688) his royal highness the prince of wales had promised / to be present . he was coming on presently from the opera
-      <!--7688_105390_000005_000000_0.wav-->
-      </font></span></td>
-    </tr>
-    <tr>
-      <th><font size='4' face="Arial">15%</font></th>
-      <th><font size='4' face="Arial">30%</font></th>
-      <th><font size='4' face="Arial">45%</font></th>
-      <th><font size='4' face="Arial">60%</font></th>
-      <th><font size='4' face="Arial">75% (Raphe-1e)</font></th>
-      <th><font size='4' face="Arial">90%</font></th>
-    </tr>
-    <tr>
-      <td><audio controls="controls"><source src="audio/15/7688_105390_000005_000000_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/30/7688_105390_000005_000000_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/45/7688_105390_000005_000000_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/60/7688_105390_000005_000000_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/75/7688_105390_000005_000000_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/90/7688_105390_000005_000000_0.wav"></audio></td>
-    </tr>
-    <tr>
-      <th><font size='4' face="Arial"><b>Ground truth</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-10e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>Raphe-parallel-0e</b></font></th>
-      <th><font size='4' face="Arial"><b>MP BERT</b></font></th>
-      <th><font size='4' face="Arial"><b>PL BERT</b></font></th>
-      <th><font size='4' face="Arial"><b>Baseline</b></font></th>
-    </tr>
-    <tr>
-      <td><audio controls="controls"><source src="audio/gt/7688_105390_000005_000000_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/10e/7688_105390_000005_000000_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/0e/7688_105390_000005_000000_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/parallel/7688_105390_000005_000000_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/mpbert/7688_105390_000005_000000_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/plbert/7688_105390_000005_000000_0.wav"></audio></td>
-      <td><audio controls="controls"><source src="audio/baseline/7688_105390_000005_000000_0.wav"></audio></td>
     </tr>
 
   </tbody>
